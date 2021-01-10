@@ -1,12 +1,8 @@
 <form>
-	<label>Email:</label>
-	<input type="email">
-	<br/>
-	<label>Input2:</label>
-	<input required>
+	<label>Age:</label>
+	<input name="age" data-val="true" data-val-number="Please enter a valid number">
+	<span data-valmsg-for="age" data-valmsg-replace="true"></span>
 </form>
 <script src="jquery-3.5.1.js"></script>
 <script src="jquery.validate-1.9.2.js"></script>
-<script>
-    $("form").validate();
-</script>
+<script src="jquery.validate.unobtrusive-3.2.11.js"></script>
